@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Furni</string>
+    <string name="se_connecter">Se connecter</string>
+    <string name="sinscrire">S \' inscrire</string>
+    <string name="connexion">Connexion</string>
+    <string name="bienvenue">Bienvenue sur Furni</string>
+    <string name="revoir">Content de vous revoir</string>
+    <string name="commerce">Commerce</string>
+    <string name="inscription">Inscription</string>
+    <string name="password">Mot de passe</string>
+    <string name="username">email ou identifiant</string>
+    <string name="recherche">Que recherchez-vous ?</string>
+    <string name="explorer">Explorer</string>
+    <string name="categorie">Categorie</string>
+    <string name="produits">Produits</string>
+    <string name="pas_de_compte">Pas encore membre?</string>
+
+</resources>
