@@ -12,7 +12,7 @@ public class ProduitContract {
         public static final String _ID = BaseColumns._ID;
         public static final String COLUMN_PRODUIT_NAME = "name";
         public static final String COLUMN_PRODUIT_DESCRIPTION = "description";
-        public static final String COLUMN_PRODUIT_PHONE = "price";
+        public static final String COLUMN_PRODUIT_PRIX = "price";
         public static final String COLUMN_PRODUIT_CATEGORIE_ID = "category_id";
         public static final String COLUMN_PRODUIT_PHOTO = "photo";
         public static final String COLUMN_PRODUIT_NOTES = "notes";

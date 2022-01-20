@@ -65,24 +65,21 @@ public class ConnexionActivity extends AppCompatActivity {
 
     }
 
+    /**methode de connexion- verifie si les identifiants existent */
     private void connecter(View v) {
 
         if (champsCorrect() != 2)
             Snackbar.make(v, "Verifiez les valeurs entrées et essayez encore.", Snackbar.LENGTH_LONG).setAction("", null).show();
-
-//        else {
-//            String m = mail.getText().toString();
-//            String p = pwd.getText().toString();
-//            boolean res = emdb.checkUser(m, p);
-//
-//            if (res) {
+        else {
+            String m = mail.getText().toString();
+            String p = pwd.getText().toString();
+            boolean res = emdb.checkUser(m, p);
+            if (res) {
                 OpenHomePage();
-//            } else {
-//                Snackbar.make(v, "identifiant ou mot de passe incorrects.", Snackbar.LENGTH_LONG).setAction("", null).show();
-//
-//            }
-//        }
-
+            } else {
+                Snackbar.make(v, "identifiant ou mot de passe incorrects.", Snackbar.LENGTH_LONG).setAction("", null).show();
+            }
+        }
 
     }
 
@@ -107,7 +104,8 @@ public class ConnexionActivity extends AppCompatActivity {
             @Override
             public void run() {
 
-                startActivity(new Intent(ConnexionActivity.this, Main2Activity.class).putExtra("email", mail.getText().toString()));
+                startActivity(new Intent(ConnexionActivity.this, Main2Activity.class));
+//                startActivity(new Intent(ConnexionActivity.this, Main2Activity.class).putExtra("email", mail.getText().toString()));
                 finish();
             }
         }, 3000);

@@ -44,7 +44,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="64dp"
                         android:fontFamily="@font/calibri"
-                        android:text="Discover"
+                        android:text="@string/explorer"
                         android:textColor="#FFFFFF"
                         android:textSize="24sp" />
 
