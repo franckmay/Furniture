@@ -12,10 +12,32 @@
     <string name="recherche">Que recherchez-vous ?</string>
     <string name="explorer">Explorer</string>
     <string name="categorie">Categorie</string>
+    <string name="categories">Categories</string>
+    <string name="produit">Produit</string>
     <string name="produits">Produits</string>
+    <string name="produitsPop">Produits Populaires</string>
     <string name="pas_de_compte">Pas encore membre?</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+
+    <string name="carreaux">carreaux</string>
+    <string name="scie">scie</string>
+    <string name="tole">tole</string>
+    <string name="truelle">truelle</string>
+    <string name="tuile">tuile</string>
+    <string name="pointe">pointe</string>
+    <string name="interrupteur">interrupteur</string>
+    <string name="moquette">moquette</string>
+    <string name="perceuse">perceuse</string>
+    <string name="peinture">peinture</string>
+    <string name="pinceau">pinceau</string>
+    <string name="echelle">echelle</string>
+    <string name="ciment">ciment</string>
+    <string name="ampoule">ampoule</string>
+    <string name="chaux">chaux</string>
+
 
 
     <string name="item_1">Original Oil 0.5 oz</string>

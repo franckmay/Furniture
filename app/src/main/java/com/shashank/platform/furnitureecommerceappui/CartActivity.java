@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
@@ -145,5 +146,11 @@ public class CartActivity extends AppCompatActivity implements  ProduitAdapter.P
             countPrices();
             paymentButtonStyle();
         }
+    }
+
+
+    public  void  retouraccueil(View view){
+        startActivity(new Intent(CartActivity.this, HomeActivity.class));
+        finish();
     }
 }

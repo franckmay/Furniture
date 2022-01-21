@@ -19,7 +19,7 @@ public class LoadActivity extends AppCompatActivity {
     static {
         AppCompatDelegate.setCompatVectorFromResourcesEnabled(true);
     }
-    private static int SPLASH_TIME_OUT = 10000;
+    private static int SPLASH_TIME_OUT = 8000;
     private ImageView logo;
     TextView name;
     private LottieAnimationView lott, lot_load;
@@ -36,7 +36,7 @@ public class LoadActivity extends AppCompatActivity {
 
         logo.animate().translationX(1400).setDuration(1300).setStartDelay(2500);
         name.animate().translationX(-1400).setDuration(1000).setStartDelay(3000);
-        lott.animate().translationX(1400).setDuration(1000).setStartDelay(4800);
+        lott.animate().translationX(1400).setDuration(1000).setStartDelay(3500);
 
 
         new Handler().postDelayed(new Runnable() {
@@ -45,7 +45,7 @@ public class LoadActivity extends AppCompatActivity {
 
                 lot_load.setVisibility(View.VISIBLE);
             }
-        },6000);
+        },5000);
 
 
         new Handler().postDelayed(new Runnable() {

@@ -40,7 +40,7 @@ tools:context=".ConnexionActivity">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
-                android:background="#8793eb"
+                android:background="@color/color02"
                 android:orientation="vertical">
 
                 <TextView
@@ -155,6 +155,7 @@ tools:context=".ConnexionActivity">
                 android:layout_gravity="center"
                 android:layout_margin="16dp"
                 android:background="@drawable/buttonshape"
+                android:backgroundTint="@color/color02"
                 android:fontFamily="@font/calibri"
                 android:text="@string/connexion"
                 android:textAllCaps="false"
@@ -185,6 +186,14 @@ tools:context=".ConnexionActivity">
                     android:onClick="OpenSignupPage"
                     android:text="@string/sinscrire"
                     android:textColor="#F40606" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="skip"
+                    android:text="skip" />
             </LinearLayout>
 
         </LinearLayout>

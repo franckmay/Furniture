@@ -14,9 +14,9 @@
         android:title="Favoris"
         android:icon="@drawable/ic_favorite"/>
 
-     <item android:id="@+id/nav_shop"
-        android:title="Shop"
-        android:icon="@drawable/ic_shopping"/>
+     <item android:id="@+id/nav_account"
+        android:title="Mon Compte"
+        android:icon="@drawable/ic_account_circle"/>
 
 
 </menu>

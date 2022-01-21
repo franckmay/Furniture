@@ -48,8 +48,8 @@ public class ConnexionActivity extends AppCompatActivity {
         setContentView(R.layout.activity_connexion);
         intent = getIntent();
         emdb = new FurnitureDbHelper(this);
-        mail = findViewById(R.id.et_ins_email);
-        pwd = findViewById(R.id.et_ins_pass);
+        mail = findViewById(R.id.username);
+        pwd = findViewById(R.id.password);
        con = findViewById(R.id.login);
 //        err = findViewById(R.id.textView13);
 //       img = findViewById(R.id.imageView);
@@ -119,5 +119,10 @@ public class ConnexionActivity extends AppCompatActivity {
             number_of_matches++;
 
         return number_of_matches;
+    }
+
+    public void skip(View view){
+        startActivity(new Intent(ConnexionActivity.this, HomeActivity.class));
+        finish();
     }
 }

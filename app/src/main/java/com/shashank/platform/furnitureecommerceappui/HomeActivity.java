@@ -4,8 +4,10 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 import android.view.WindowManager;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -42,7 +44,7 @@ public class HomeActivity extends AppCompatActivity {
                     case R.id.nav_explore:
                         fragment = new ExplorerFragment();
                         break;
-                    case R.id.nav_shop:
+                    case R.id.nav_account:
                         fragment = new PanierFragment();
                         break;
 
@@ -51,5 +53,11 @@ getSupportFragmentManager().beginTransaction().replace(R.id.body_container, frag
                 return true;
             }
         });
+    }
+
+
+    public void ouvrirPanier(View view){
+        startActivity(new Intent(HomeActivity.this, CartActivity.class));
+        finish();
     }
 }
