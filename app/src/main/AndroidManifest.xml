@@ -14,12 +14,17 @@
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup">
         <activity
+            android:name=".CartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
             android:name=".InscriptionActivity"
             android:exported="false"
             android:screenOrientation="fullSensor"
             android:theme="@style/MyAppTheme"
             android:windowSoftInputMode="stateHidden|adjustPan" />
-
         <activity
             android:name=".ConnexionActivity"
             android:exported="false"
@@ -56,10 +61,7 @@
             android:label=""
             android:screenOrientation="portrait"
             android:theme="@style/MyAppTheme"
-            android:windowSoftInputMode="stateHidden|adjustPan">
-
-        </activity>
-
+            android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
             android:name=".LoadActivity"
             android:exported="true"

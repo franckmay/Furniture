@@ -48,4 +48,10 @@
     <color name="goodgrey">#535353</color>
     <color name="blue">#293859</color>
     <color name="lightgrey">#EEEEEE</color>
+
+    <color name="colorBackground">#F6F6F6</color>
+    <color name="colorTitle">#232323</color>
+    <color name="colorSubtitle">#AEAEAE</color>
+    <color name="colorCancel">#ECECEC</color>
+    <color name="colorPayment">#A31D26</color>
 </resources>

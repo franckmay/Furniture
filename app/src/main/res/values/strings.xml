@@ -14,5 +14,21 @@
     <string name="categorie">Categorie</string>
     <string name="produits">Produits</string>
     <string name="pas_de_compte">Pas encore membre?</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="item_1">Original Oil 0.5 oz</string>
+    <string name="item_2">Cream 2 oz</string>
+    <string name="item_3">Beard Spray 1 oz</string>
+    <string name="item_4">Beard Brush</string>
+    <string name="cancel">Annuler</string>
+    <string name="payment">PAYEMENT</string>
+    <string name="shipping_title">Shipping Costs:</string>
+    <string name="total_title">Total:</string>
+    <string name="currency">Fcfa</string>
+    <string name="product_id">PRODUIT ID:</string>
+    <string name="categorie_id">Category ID:</string>
+    <string name="cart_list">CART LIST</string>
 
 </resources>
