@@ -19,11 +19,11 @@ public class Main2Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
-        personLinearLayout = findViewById(R.id.person_linear_layout);
+
         favorite = findViewById(R.id.favorite);
         cactusCardView = findViewById(R.id.cactus_card_view);
         personLinearLayout.setOnClickListener(view -> {
-            Intent intent = new Intent(getApplicationContext(), Main3Activity.class);
+            Intent intent = new Intent(getApplicationContext(), ProfilActivity.class);
             startActivity(intent);
         });
         favorite.setOnClickListener(view -> {

@@ -90,6 +90,8 @@ public class CartActivity extends AppCompatActivity implements  ProduitAdapter.P
             public void onClick(View view) {
                 if (produits.size() != 0) {
                     Toast.makeText(CartActivity.this, "Payment", Toast.LENGTH_LONG).show();
+                    startActivity(new Intent(CartActivity.this, Payement.class).putExtra("somme",total_price.getText()));
+                    finish();
                 }
             }
         });
@@ -100,6 +102,7 @@ public class CartActivity extends AppCompatActivity implements  ProduitAdapter.P
             @Override
             public void onClick(View view) {
                 Toast.makeText(CartActivity.this, "Back Arrow", Toast.LENGTH_LONG).show();
+                 retouraccueil(view);
             }
         });
     }

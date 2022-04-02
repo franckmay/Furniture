@@ -18,7 +18,7 @@
             android:layout_height="110dp"
             android:layout_centerVertical="true"
             android:layout_marginStart="10dp"
-            android:background="@drawable/item_1" />
+            android:background="@drawable/echelle" />
 
         <RelativeLayout
             android:id="@+id/product_info_parent"

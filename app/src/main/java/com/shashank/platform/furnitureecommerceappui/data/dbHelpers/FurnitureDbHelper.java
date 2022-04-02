@@ -26,8 +26,6 @@ public class FurnitureDbHelper extends SQLiteOpenHelper {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
 
-
-    //This is called when the database is created for the first time
     @Override
     public void onCreate(SQLiteDatabase db) {
 
@@ -40,20 +38,15 @@ public class FurnitureDbHelper extends SQLiteOpenHelper {
                 + UserContract.UserEntry.COLUMN_USER_PHONE + "  VARCHAR(20) "
                 + ");";
 
-
-        // Create a String that contains the SQL statement to create the department table
-
         String SQL_CREATE_CATEGORY_TABLE = "CREATE TABLE " + CategorieContract.TABLE_NAME + "("
                 + CategorieContract.CategorieEntry._ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
                 + CategorieContract.CategorieEntry.COLUMN_CATEGORIE_NAME + " VARCHAR(255) NOT NULL UNIQUE, "
                 + CategorieContract.CategorieEntry.COLUMN_CATEGORIE_DESCRIPTION + "  VARCHAR(300) "
                 + ");";
 
-        // Create a String that contains the SQL statement to create the employee table
         String SQL_CREATE_PRODUCT_TABLE = "CREATE TABLE " + ProduitContract.TABLE_NAME + "("
                 + ProduitEntry._ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
                 + ProduitEntry.COLUMN_PRODUIT_NAME + " VARCHAR(70) NOT NULL, "
-//                    + ProduitEntry.COLUMN_EMPLOYEE_BIRTHDATE + " DATE NOT NULL,"
                 + ProduitEntry.COLUMN_PRODUIT_CATEGORIE_ID + " INTEGER NOT NULL,"
                 + ProduitEntry.COLUMN_PRODUIT_PRIX + " VARCHAR(50) NOT NULL,"
                 + ProduitEntry.COLUMN_PRODUIT_NOTES + " VARCHAR(255),"
@@ -63,19 +56,6 @@ public class FurnitureDbHelper extends SQLiteOpenHelper {
                 + ");";
 
 
-//            // Create a String that contains the SQL statement to create the task table
-//            String SQL_CREATE_TASK_TABLE = "CREATE TABLE " + TaskContract.TABLE_NAME + "("
-//                    + TaskEntry._ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
-//                    + TaskEntry.COLUMN_TASK_NAME + " VARCHAR(70) NOT NULL, "
-//                    + TaskEntry.COLUMN_TASK_DESCRIPTION + " VARCHAR(300), "
-//                    + TaskEntry.COLUMN_TASK_DEADLINE + " DATETIME ,"
-//                    + TaskEntry.COLUMN_TASK_DATE + " DATETIME ,"
-//                    + TaskEntry.COLUMN_TASK_COMPLETED + " TINYINT(1),"
-//                    + TaskEntry.COLUMN_TASK_EVALUATION + " INTEGER"
-//                    + ");";
-
-
-        //executes SQL create statements
         db.execSQL(SQL_CREATE_USER_TABLE);
         db.execSQL(SQL_CREATE_CATEGORY_TABLE);
         db.execSQL(SQL_CREATE_PRODUCT_TABLE);
@@ -88,7 +68,6 @@ public class FurnitureDbHelper extends SQLiteOpenHelper {
         // The database is still at version 1, so there's nothing to do be done here.
         // DATABASE_VERSION ++;
     }
-//
 
 
 
@@ -166,11 +145,9 @@ public class FurnitureDbHelper extends SQLiteOpenHelper {
     }
 
     public boolean addUser(String user_name, String user_email, String user_pass, String user_phone) {
-        //adds an user entry to user table
 
         SQLiteDatabase db = this.getWritableDatabase(); //gets writeable instance of database
         ContentValues cv = new ContentValues(); //used for inserting an entry
-
 
         if (user_name != null && !user_name.isEmpty() && !user_name.trim().isEmpty()) //checks if field is provided if not it is not added in the query
             cv.put(UserEntry.COLUMN_USER_NAME, user_name);
@@ -186,15 +163,6 @@ public class FurnitureDbHelper extends SQLiteOpenHelper {
         return flag != -1; //-1 if insert fails
 
     }
-
-
-
-
-
-
-
-
-
 
 
     //

@@ -50,10 +50,8 @@ public class ConnexionActivity extends AppCompatActivity {
         emdb = new FurnitureDbHelper(this);
         mail = findViewById(R.id.username);
         pwd = findViewById(R.id.password);
-       con = findViewById(R.id.login);
-//        err = findViewById(R.id.textView13);
-//       img = findViewById(R.id.imageView);
-//        ll = findViewById(R.id.ll_vert_con);
+        con = findViewById(R.id.login);
+
         lott = findViewById(R.id.lottie_duc);
         con.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -62,10 +60,11 @@ public class ConnexionActivity extends AppCompatActivity {
             }
         });
 
-
     }
 
-    /**methode de connexion- verifie si les identifiants existent */
+    /**
+     * methode de connexion- verifie si les identifiants existent
+     */
     private void connecter(View v) {
 
         if (champsCorrect() != 2)
@@ -76,8 +75,9 @@ public class ConnexionActivity extends AppCompatActivity {
             boolean res = emdb.checkUser(m, p);
             if (res) {
                 OpenHomePage();
+
             } else {
-                Snackbar.make(v, "identifiant ou mot de passe incorrects.", Snackbar.LENGTH_LONG).setAction("", null).show();
+                Snackbar.make(v, "identifiant et/ou mot de passe incorrects.", Snackbar.LENGTH_LONG).setAction("", null).show();
             }
         }
 
@@ -88,10 +88,6 @@ public class ConnexionActivity extends AppCompatActivity {
     }
 
     public void OpenHomePage() {
-//        img.animate().translationX(-1400).setDuration(1000).setStartDelay(100);
-//        ll.animate().translationX(1400).setDuration(500).setStartDelay(500);
-
-
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -104,8 +100,8 @@ public class ConnexionActivity extends AppCompatActivity {
             @Override
             public void run() {
 
-                startActivity(new Intent(ConnexionActivity.this, Main2Activity.class));
-//                startActivity(new Intent(ConnexionActivity.this, Main2Activity.class).putExtra("email", mail.getText().toString()));
+//                startActivity(new Intent(ConnexionActivity.this, Main2Activity.class));
+                startActivity(new Intent(ConnexionActivity.this, HomeActivity.class));
                 finish();
             }
         }, 3000);
@@ -121,7 +117,7 @@ public class ConnexionActivity extends AppCompatActivity {
         return number_of_matches;
     }
 
-    public void skip(View view){
+    public void skip(View view) {
         startActivity(new Intent(ConnexionActivity.this, HomeActivity.class));
         finish();
     }

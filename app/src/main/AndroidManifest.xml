@@ -14,13 +14,22 @@
         android:theme="@style/AppTheme.NoActionBar"
         tools:ignore="AllowBackup">
         <activity
+            android:name=".SignUp"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".Payement"
+            android:exported="false" />
+        <activity
             android:name=".CartActivity"
             android:exported="false" />
         <activity
             android:name=".HomeActivity"
             android:exported="false"
             android:theme="@style/MyAppTheme"
-            android:windowSoftInputMode="stateHidden|adjustPan"/>
+            android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
             android:name=".InscriptionActivity"
             android:exported="false"
@@ -46,7 +55,7 @@
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name=".Main3Activity"
+            android:name=".ProfilActivity"
             android:label=""
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"

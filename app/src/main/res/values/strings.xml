@@ -9,17 +9,21 @@
     <string name="inscription">Inscription</string>
     <string name="password">Mot de passe</string>
     <string name="username">email ou identifiant</string>
+    <string name="email">email</string>
+    <string name="name">Nom</string>
     <string name="recherche">Que recherchez-vous ?</string>
+
+
     <string name="explorer">Explorer</string>
     <string name="categorie">Categorie</string>
     <string name="categories">Categories</string>
     <string name="produit">Produit</string>
     <string name="produits">Produits</string>
+    <string name="panier">Panier</string>
     <string name="produitsPop">Produits Populaires</string>
     <string name="pas_de_compte">Pas encore membre?</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-
 
 
     <string name="carreaux">carreaux</string>
@@ -39,7 +43,6 @@
     <string name="chaux">chaux</string>
 
 
-
     <string name="item_1">Original Oil 0.5 oz</string>
     <string name="item_2">Cream 2 oz</string>
     <string name="item_3">Beard Spray 1 oz</string>
@@ -52,5 +55,6 @@
     <string name="product_id">PRODUIT ID:</string>
     <string name="categorie_id">Category ID:</string>
     <string name="cart_list">CART LIST</string>
+    <string name="waiting">waiting</string>
 
 </resources>

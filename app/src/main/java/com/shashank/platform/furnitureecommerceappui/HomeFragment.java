@@ -1,7 +1,9 @@
 package com.shashank.platform.furnitureecommerceappui;
 
+import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -15,6 +17,8 @@ import android.view.ViewGroup;
  */
 public class HomeFragment extends Fragment {
 
+
+    CardView cactusCardView;
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -53,12 +57,23 @@ public class HomeFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
+
+        View v = inflater.inflate(R.layout.fragment_home, container, false);
+        cactusCardView = v.findViewById(R.id.cactus_card_view);
+        cactusCardView.setOnClickListener(view -> {
+            Intent intent = new Intent(getActivity(), Main5Activity.class);
+            getActivity().startActivity(intent);
+        });
+
+
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false);
+        return v;
     }
 }
